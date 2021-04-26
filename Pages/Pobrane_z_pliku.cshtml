@@ -1,0 +1,14 @@
+﻿@page
+@model ServiceInjection.Pages.Pobrane_z_plikuModel
+@{
+    ViewData["Title"] = "Pobrane z pliku";
+}
+
+<div class="text-center">
+    <p class="display-4">Pobrane z pliku</p>
+</div>
+
+@foreach (var product in Model.Products)
+{
+    <p>@product.Title</p>
+}

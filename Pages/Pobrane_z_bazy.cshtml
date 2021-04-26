@@ -1,0 +1,11 @@
+﻿@page
+@model ServiceInjection.Pages.Pobrane_z_bazyModel
+@{
+}
+
+@foreach (var item in Model.Products)
+{
+    <p>
+        @Html.DisplayFor(modelItem => item.Title)
+</p>
+}
